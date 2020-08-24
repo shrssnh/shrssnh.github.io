@@ -1,0 +1,79 @@
+div.video{
+    background: radial-gradient(#3fc2ff70, black);
+}
+div.video img{
+    mix-blend-mode: multiply;
+    width: 100%;
+    height: 100%;
+}
+.stats{
+    background-color: #f2f2f2;
+    margin: 0;
+    padding-top: 3%;
+    padding-bottom: 7%;
+}
+.head{
+    margin: 4%;
+    margin-left: 0;
+    width: 100vw; 
+    background-color: #6d5fff;
+    padding: 0;
+    padding-left: 15%;
+    color: #f2f2f2;
+    background-image: url(../Images/Marks.png);
+    background-size: 30%;
+    background-blend-mode: difference;
+}
+p{font-size: 20px;}
+div h1{
+    color: #3fc1ff;
+    text-shadow: 4px 4px #f2f2f2;
+    margin-left: 10%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+h2, p{
+    margin: 8%;
+}
+h2{
+    width: 100%;
+    font-size: 26px;
+}
+.gpl div{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    margin: 4%;
+    width: 25%;
+    height: 30vh;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    box-shadow:  5px 5px 10px #c4c4c4, -5px -5px 10px #ffffff;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.gpl{
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+#winner{text-shadow: 2px 2px #6d5fff;}
+
+div.i1{background-image: url(../Images/Stats1.png);}
+div.i2{background-image: url(../Images/Stats2.png);}
+div.i3{background-image: url(../Images/Stats3.png);}
+div.i4{background-image: url(../Images/Stats4.png);}
+div.i5{background-image: url(../Images/Stats5.png);}
+div.i6{background-image: url(../Images/Stats6.png);}
+div.i7{background-image: url(../Images/Stats7.png);}
+div.i8{background-image: url(../Images/Stats8.png);}
+div.i9{background-image: url(../Images/Stats9.png);}
+div.i10{background-image: url(../Images/Stats8.png);}
+div.i11{background-image: url(../Images/Stats11.png);}
+div.i12{background-image: url(../Images/Stats12.png);}
+div.i13{background-image: url(../Images/Stats13.png);}
+div.i14{background-image: url(../Images/Stats6.png);}

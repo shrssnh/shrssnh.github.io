@@ -1,0 +1,84 @@
+div.video{
+    opacity: 0.6;
+    background: radial-gradient(transparent, black);
+}
+div.video video{
+    mix-blend-mode: multiply;
+}
+.black2{
+    background-image: url("../Images/VectorBG.png");
+    background-attachment: fixed;
+    background-size: 75% 75%;
+    padding-top: 20vh;
+}
+div.content{
+    z-index: 2;
+    background-image: url("../Images/BGB.png");
+    background-size: 100vw 70vh;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    height: 70vh;
+    margin: 0;
+    padding: 7vw;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    color: white;
+}
+.alt h1{text-shadow: 4px 4px #3fc1ff; padding-top: 10vh;}
+.al h1{text-shadow: -4px 4px #3fc1ff; padding-top: 10vh;}
+div.alt{
+    background-image: url("../Images/BGW.png");
+    margin: 0;
+    background-position-x: 3px;
+    z-index: 1;
+    text-align: right;
+}
+div.alt img{
+    max-width: 100%;
+    transform: translateY(-13vh);
+    margin-left: -10vw;
+}
+
+div.content div{
+    margin-top: -8vh;
+    width: 40%;
+    height: 75%;
+    color: #1a1a1a;
+    font-size: 25px;
+    padding-top: 5vh;
+}
+div.al img{
+    transform: translateY(-15vh);
+    max-width: 40vw;
+    height: auto;
+}
+
+section.Design{
+    padding-top: 5%;
+    padding-bottom: 10%;
+    text-align: center;
+    min-height: 80vh;
+    background-color: #f2f2f2;
+    background-blend-mode: color-burn;
+    background-image: url(../Images/Marks.png);
+}
+section.Design h1{text-shadow: -4px 4px #6d5fff; margin-top: 1%; margin-bottom: 1%;}
+section.Design p{
+    margin: 8%;
+    font-size: 24px;
+}
+section.Design div{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+section.Design img{
+    max-width: 33.33%;
+}
+.content h1{
+    font-size: 55px;
+}
+#one{background-color: white;}
+#two{background-color: #3fc1ff;}
+#three{background-color: black;}

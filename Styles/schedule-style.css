@@ -1,0 +1,36 @@
+.schedule{
+    background-image: url("../Images/Marks2.png");
+    background-blend-mode: color-burn;
+    background-position: -10vw -20vh;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    padding: 3%;
+    padding-bottom: 10vh;
+}
+div.video{
+    width: 100%;
+    opacity: 0.6;
+    background: radial-gradient(transparent, black);
+}
+div.video video{
+    mix-blend-mode: multiply;
+    width: 100%;
+}
+.schedule div{
+    height: 30vh;
+    margin: 4%;
+    margin-bottom: 3%;
+    width: 17%;
+    border-radius: 16px;
+    background: #f2f2f2;
+    box-shadow:  5px 5px 10px #c4c4c4, -5px -5px 10px #ffffff;
+}
+.schedule p{
+    height: 2%;
+    background-color: #6d5fff;
+}
+
+.schedule h2{text-align: center; font-size: 70px; color: #1a1a1a;}
+.schedule h3{padding-top: 2%; text-align: center; color: #1a1a1a;}
