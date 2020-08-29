@@ -43,8 +43,8 @@
                         title: "hello",
                         photo: data  
                     }
-                }).done(function (o) {
-                    $("#out").html(o)
+                }).done(function (outText) {
+                    $("#out").html(outText)
                     alert("Vote Registered Successfuly");
                 });
                 context.clearRect(0, 0, canvas.width, canvas.height);
