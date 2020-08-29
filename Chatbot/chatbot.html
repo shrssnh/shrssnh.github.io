@@ -1,0 +1,29 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="indexStyle.css">
+    <link rel="stylesheet" href="chatbot.css">
+</head>
+
+<body>
+    <div id="contact">
+        <div class="container">
+            <div class="header">Chatbot</div>
+            <div id="chats">
+                <div><div class="left"><span class="left">Hey</span></div></div>
+                <div><div class="left"><span class="left">I am a bot designed to help you and I'll try to answer all your questions the best I can.</span></div></div>
+                <div><div class="left"><span class="left">If you want the list of some FAQ type 'faq' but without the quotes</span></div></div>
+                <div><div class="left"><span class="left">If you want to get the contact info, type 'contact'</span></div></div>
+            </div>
+            <form id="mail" onsubmit="return false;">
+                <input type="text" name="FirstName">
+                <button onclick="buttonPress()" id="chatEnter" type="button">></button>
+                <!-- <button onclick="revert()">Back</button>/ -->
+            </form>
+        </div>
+        <script src="Chatbot.js"></script>
+    </div>
+</body>
+</html>

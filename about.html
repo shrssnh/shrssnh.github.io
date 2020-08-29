@@ -3,72 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - GPL 2020</title>
-    <link rel="stylesheet" href="Styles/about_style.css">
-    <link rel="stylesheet" href="Styles/General.css">
+    <title>About</title>
+    <link rel="stylesheet" href="css/aboutStyle.css">
+    <link rel="stylesheet" href="css/Loader.css">
+    <link rel="stylesheet" href="chatbot/chatbot.css">
 </head>
-
 <body>
-    <header>
-        <a href="index.html" class="Logo"><img src="Images/Light.png" alt=""></a>
-
-        <ul class="Header_Menu">
-            <li><a href="about.html" class="button1">About</a></li>
-            <li><a href="schedule.html" class="button1">Schedule</a></li>
-            <li><a href="stats.html" class="button1">Stats</a></li>
-            <li><a href="Teams.html" class="button1">Teams</a></li>
-        </ul>
-    </header>
-
-    <div class="video"><video autoplay loop muted><source src="Videos/Loop.mp4" type="video/mp4"></video></div>
-
-    <section class="heading">
-        <h1>THAT'S  RIGHT. WE'RE GOING FOR VR.</h1>
-    </section>
-    <div class="black2">
-        <div class="content alt">
-            <div>
-                <img src="Images/CarboardMin.png" alt="">
-            </div>
-            <div>
-                <h1>Stylish yet affordable</h1>Just use your mobile phone and your GPL kit. <br>No third party gear required.
-            </div>
-        </div>
- 
-        <div class="content al">
-            <div>
-                <h1>The controller: Osiris</h1><br>Available at all retail locations of Gada Electronics <br>Preorder on <a href="https://www.amazon.in/"> amazon</a>
-            </div>
-            <div>
-                <img src="Images/Haathme.png" alt="">
-            </div>
-        </div>
+    
+    <div id="loadingDiv" class="loadingDiv">
+        <span class="loader"><span class="loader-inner"></span></span>
     </div>
 
-    <section class="Design">
-        <h1>Branding</h1>
-        <p>Brought to you in cooperation with TMKOC productions pvt lmtd. All trademarks and logos are private property of Icarus inc. Any unauthorized usage of these and we sue you ;)</p>
-        <div>
-            <img src="Images/Dark.png" alt="" id="one">
-            <img src="Images/Normal.png" alt="" id="two">
-            <img src="Images/Light.png" alt="" id="three">
+    <script>
+        window.addEventListener("load", function(){
+            const loader = document.getElementById("loadingDiv");
+            loader.className += " hidden";
+        });
+    </script><!--Script for load function-->
+
+    <section id="blurrable">
+        <header>
+            <nav>
+                <a href="index.html" class="button1">HOME</a>
+                <a href="about.html" class="button1">ABOUT</a>
+                <a href="app.html" class="button1">MOCK VOTE</a>
+            </nav>
+        </header>
+
+        <div id="main">
+            <div style="text-align: center; margin-top: 15%" id="particles-js">
+                <div id="particles-js"></div>
+                <h1 style="font-size: 40px; letter-spacing: 120px; padding-left: 5%; margin-bottom: 10%;">ABOUT</h1>
+                <div class="cards"><div><h1>WHAT IS LUMIN?</h1><p>Lumin is a joint venture between Leo Wolowitz and macro hard for creating a safe environment for the upcoming presidential elections to take place among the current conditions of the pandemic America being one of the most affected by the pandemic the technology used to create the voting system is created by keeping the most disruptive non cooperating people in mind. It ensures high security and transparency and guarantees an infallible ballot system and with clever marketing team ensures a maximum turnout all while keeping your health and life at par with the needs of the country and ensuring proper allocation so that every American has their right to democracy their right to vote and be obese by eating lots of fast food.</p></div></div>
+                <p class="space red"><br></p>
+                <div class="cards"><p>The 2020 United States presidential election is scheduled for Tuesday, November 3, 2020. It will be the 59th quadrennial presidential election. Voters will select presidential electors who in turn will vote on December 14, 2020, to either elect a new president and vice president or reelect the incumbents Donald Trump and Mike Pence respectively.
+                    The candidate’s websites - <a href="https://joebiden.com/">https://joebiden.com/</a> &nbsp;
+                    <a href="https://www.donaldjtrump.com/">https://www.donaldjtrump.com/</a> 
+                    </p></div>
+                <p class="space blue"><br></p>
+                <div class="cards"><p>Several events related to the 2020 presidential election have been altered or postponed due to the ongoing coronavirus pandemic. On March 10, following primary elections in six states, Democratic candidates Joe Biden and Bernie Sanders cancelled planned campaign night events and further in-person campaigning and campaign rallies. On March 12, President Trump also stated his intent to postpone further campaign rallies. The 11th Democratic debate was held on March 15 without an audience at the CNN studios in Washington, D.C. Several states have also postponed their primaries to a later date, including Georgia, Kentucky, Louisiana,Ohio, and Maryland. As of March 24, 2020, all major-party presidential candidates had halted in-person campaigning and campaign rallies over coronavirus concerns. Political analysts have stated that the moratorium on traditional campaigning coupled with the effects of the pandemic on the nation could have unpredictable effects on the voting populace and possibly, how the election will be conducted. 
+                    </p></div>
+                <div class="video"><a href="https://drive.google.com/drive/folders/1O0kbv3LF1E9KQJpVPFi4g7ulmrwG9obw">WATCH THE VIDEO</a></div>
+            </div>
         </div>
+
+        <footer>
+            <div>In case of any questions or queries, </div>
+            <div><button onclick="contact()">Chat With Us</button></div>
+        </footer>
     </section>
 
-    <footer>
-        <br>
-        <h1>#GPLISBACK</h1>        
-        <h4>© GPL2020 Organisation committee</h4>
-        <h4>For any query contact:
-            manager@GPL2020.com
-            9988553322
-        </h4>
-        <br>
-        <h3>Important Links: &nbsp;&nbsp;&nbsp;
-            <a href="schedule.html">Schedule</a>&nbsp;&nbsp;
-            <a href="stats.html">Stats</a>
-        </h3>
-        
-        <br>
-    </footer>
+    <script src="javascript/particles.js"></script>
+    <script>
+        particlesJS.load('particles-js', 'javascript/particles.json', function() {console.log("Particles json loaded...")})
+    </script>
+    <div id="contact">
+            <div class="container">
+                <div class="header">Chatbot</div>
+                <div id="chats">
+                    <div><div class="left"><span class="left">Hey</span></div></div>
+                    <div><div class="left"><span class="left">I am a bot designed to help you and I'll try to answer all your questions the best I can.</span></div></div>
+                    <div><div class="left"><span class="left">If you want the list of some FAQ type 'faq' but without the quotes</span></div></div>
+                    <div><div class="left"><span class="left">If you want to get the contact info, type 'contact'</span></div></div>
+                </div>
+                <form id="mail" onsubmit="return false;">
+                    <input type="text" name="FirstName">
+                    <button onclick="buttonPress()" id="chatEnter" type="button">></button>
+                    <button onclick="revert()" style="color: white; font-size: 20px;">Back</button>
+                </form>
+            </div>
+            <script src="Chatbot/Chatbot.js"></script>
+    </div>
+    <script src="Chatbot/Chatbot.js"></script>    
+    <script src="javascript/index.js"></script>
 </body>
+</html>

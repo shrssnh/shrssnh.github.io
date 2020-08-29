@@ -1,99 +1,92 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GPL 2020</title>
-    <link rel="stylesheet" href="Styles/General.css">
-    <link rel="stylesheet" href="Styles/index_style.css">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/indexStyle.css">
+    <link rel="stylesheet" href="css/Loader.css">
+    <link rel="stylesheet" href="Chatbot/chatbot.css">
 </head>
-
 <body>
-    <header>
-        <a href="index.html" class="Logo"><img src="Images/Light.png" alt=""></a>
-
-        <ul class="Header_Menu">
-            <li><a href="about.html" class="button1">About</a></li>
-            <li><a href="schedule.html" class="button1">Schedule</a></li>
-            <li><a href="stats.html" class="button1">Stats</a></li>
-            <li><a href="Teams.html" class="button1">Teams</a></li>
-        </ul>
-    </header>
     
-    <div class="video"><video autoplay loop muted><source src="Videos/Trophy.mp4" type="video/mp4"></video></div>
-    
-    <section class="heading">
-        //GPL IS BACK// 
-        <br>
-        <a href="https://drive.google.com/file/d/1lfDLSTgX1oxDsPrIJugaD1lbfaZVVILT/view?usp=sharing" class="button2">Trailer</a>
-    </section>
-
-    <div class="black"> 
-
-        <div class="tech">
-            <div><h1>Compete with the pros</h1>
-            <p>Get a chance to win this trophy through the online qualifier</p>
-            <p>Play with your team and win exclusive prizes</p>
-            <p>*wink*</p>
-        </div>
-        </div>
-
+    <div id="loadingDiv" class="loadingDiv">
+        <span class="loader"><span class="loader-inner"></span></span>
     </div>
 
-    <div class="black2">
-        <div class="content alt">
-            <div>
-                <img src="Images/Carboard.png" alt="">
-            </div>
-            <div>
-                <h1>The Pro Gear</h1>Order the GPL kit online through our partner <a href="https://www.amazon.in/">amazon</a> <br>We have developed in house technology that is more than suited for all that you could possibly want from a VR setup.
-            </div>
-        </div>
- 
-        <div class="content al">
-            <div>
-                <h1>Futuristic Stadium</h1><br>Experience a once in a lifetime match-up
-            </div>
-            <div>
-                <img src="Images/Stadium.png" alt="">
-            </div>
-        </div>
+    <script>
+        window.addEventListener("load", function(){
+            const loader = document.getElementById("loadingDiv");
+            loader.className += " hidden";
+        });
+    </script><!--Script for load function-->
+    
+    <div id="blurrable" onclick="clear()">
+        <header>
+            <nav>
+                <a href="index.html" class="button1">HOME</a>
+                <a href="about.html" class="button1">ABOUT</a>
+                <a href="app.html" class="button1">MOCK VOTE</a>
+            </nav>
+        </header>
 
+        <div class="main">
+            <div><svg id="mySVG">
+               <path class="line" stroke="#262736" fill="none" stroke-width="8" d="M344,339.69a8.55,8.55,0,0,1-6.9-13.6,325.44,325.44,0,0,1,406-100.33,8.56,8.56,0,1,1-7.54,15.36A308.35,308.35,0,0,0,351,336.18,8.52,8.52,0,0,1,344,339.69Z"/>
+                <path class="line" stroke="#262736" fill="none" stroke-width="8" d="M919.1,453.64a9.07,9.07,0,0,0-.56-1.74A324,324,0,0,0,786.9,251.65a8.56,8.56,0,1,0-9.83,14,307,307,0,0,1,125.08,191.4,8.17,8.17,0,0,0,.49,1.59,310.2,310.2,0,0,1,5.76,65.56,8.56,8.56,0,0,0,8.4,8.72H917a8.57,8.57,0,0,0,8.56-8.39A327.69,327.69,0,0,0,919.1,453.64Z"/>
+                <path class="line" stroke="#262736" fill="none" stroke-width="8" d="M518.13,832.71a8.56,8.56,0,0,1-6.43-14.21A351.49,351.49,0,0,0,586,681.07a344.27,344.27,0,0,0,5.58-161.4,8.56,8.56,0,0,1,16.78-3.38,361.33,361.33,0,0,1-5.87,169.34,368.76,368.76,0,0,1-78,144.17A8.56,8.56,0,0,1,518.13,832.71Z"/>
+                <path class="line" stroke="#262736" fill="none" stroke-width="8" d="M477.16,818.68A8.55,8.55,0,0,1,471,804.15a308.43,308.43,0,0,0,66.88-103.76,8.56,8.56,0,0,1,15.94,6.22A325.31,325.31,0,0,1,483.29,816.1,8.53,8.53,0,0,1,477.16,818.68Z"/>
+                <path class="line" stroke="#262736" fill="none" stroke-width="8" d="M562.49,841.25a8.56,8.56,0,0,1-6.74-13.83,387.52,387.52,0,0,0,74.71-315.57l-.58-2.85a31.27,31.27,0,0,0-36.12-21.66,31.31,31.31,0,0,0-25,32.6l.84,4.18a323.46,323.46,0,0,1-.7,132.45A8.55,8.55,0,1,1,552.15,653a306,306,0,0,0,2.2-117.24l-.17,0-1.66-8.23a48.38,48.38,0,0,1,94.84-19.13l1.51,7.47-.2.06a404.6,404.6,0,0,1-79.44,322A8.52,8.52,0,0,1,562.49,841.25Z"/>
+                <path class="line" stroke="#262736" fill="none" stroke-width="8" d="M439.74,799.91a8.56,8.56,0,0,1-5.85-14.81,269.44,269.44,0,0,0,83-232.47,8.56,8.56,0,1,1,17-2.29A286.6,286.6,0,0,1,445.58,797.6,8.54,8.54,0,0,1,439.74,799.91Z"/>
+                <path class="line" stroke="#262736" fill="none" stroke-width="8" d="M686.35,596.25a8.55,8.55,0,0,1-8.55-8.53,430.31,430.31,0,0,0-8.51-83.7l-.66-3.31a70.85,70.85,0,0,0-138.06,2.83,8.56,8.56,0,1,1-16.75-3.5,87.95,87.95,0,0,1,172.32.57l1.39,6.85-.13.06a446.87,446.87,0,0,1,7.51,80.15,8.55,8.55,0,0,1-8.53,8.58Z"/>
+                <path class="line" stroke="#262736" fill="none" stroke-width="8" d="M610.05,843.27a8.55,8.55,0,0,1-7-13.39A429.15,429.15,0,0,0,675.07,637a8.56,8.56,0,0,1,17,1.94,446.23,446.23,0,0,1-75,200.64A8.54,8.54,0,0,1,610.05,843.27Z"/>
+                <path class="line" stroke="#262736" fill="none" stroke-width="8" d="M405.92,777.07a8.56,8.56,0,0,1-5.61-15,229.26,229.26,0,0,0,76.33-210.71h-.07l-1.64-8.14a127.64,127.64,0,0,1,135-152.38,8.56,8.56,0,1,1-1.33,17.06,110.44,110.44,0,0,0-118.05,125l1.39,6.92A246.42,246.42,0,0,1,411.52,775,8.55,8.55,0,0,1,405.92,777.07Z"/>
+                <path class="line" stroke="#262736" fill="none" stroke-width="8" d="M660.57,837.53a8.57,8.57,0,0,1-7.38-12.89,466.11,466.11,0,0,0,54.92-328.45l-.74-3.71a110.38,110.38,0,0,0-53.71-71A8.55,8.55,0,1,1,662,406.57a127.47,127.47,0,0,1,63,86.21l1.47,7.27-.12,0A483.18,483.18,0,0,1,668,833.3,8.56,8.56,0,0,1,660.57,837.53Z"/>
+                <path class="line" stroke="#262736" fill="none" stroke-width="8" d="M375.83,750.57a8.56,8.56,0,0,1-5.42-15.18A190.89,190.89,0,0,0,427.29,657a8.56,8.56,0,1,1,15.95,6.2,208.16,208.16,0,0,1-62,85.47A8.54,8.54,0,0,1,375.83,750.57Z"/>
+                <path class="line" stroke="#262736" fill="none" stroke-width="8" d="M758.81,680.62a8.36,8.36,0,0,1-1.4-.12,8.55,8.55,0,0,1-7-9.83A504.88,504.88,0,0,0,747,488.36l-.46-2.3a150,150,0,0,0-294.92,54l1.53,7.58A207.06,207.06,0,0,1,456,610.52a8.55,8.55,0,1,1-17-1.83,189,189,0,0,0-1.21-49.3L436.13,551A167.1,167.1,0,1,1,763.74,485l.8,4,0,0a521.81,521.81,0,0,1,2.72,184.47A8.56,8.56,0,0,1,758.81,680.62Z"/>
+                <path class="line" stroke="#262736" fill="none" stroke-width="8" d="M713.61,822.34A8.57,8.57,0,0,1,705.92,810a507.22,507.22,0,0,0,34-90.86,8.56,8.56,0,1,1,16.53,4.42,524.23,524.23,0,0,1-35.1,93.94A8.56,8.56,0,0,1,713.61,822.34Z"/>
+                <path class="line" stroke="#262736" fill="none" stroke-width="8" d="M768.72,794.78a8.45,8.45,0,0,1-3.06-.57,8.54,8.54,0,0,1-4.93-11,544.54,544.54,0,0,0,25.48-300.48l-.45-2.16a188.05,188.05,0,0,0-32.5-74.1,8.56,8.56,0,1,1,13.83-10.08,204.88,204.88,0,0,1,34.7,77.26l0,0,.72,3.52a561.53,561.53,0,0,1-25.84,312.13A8.55,8.55,0,0,1,768.72,794.78Z"/>
+                <path class="line" stroke="#262736" fill="none" stroke-width="8" d="M725.56,373.33a8.53,8.53,0,0,1-5.42-1.93,189.85,189.85,0,0,0-199.35-25.71,8.56,8.56,0,0,1-7.13-15.56,207,207,0,0,1,217.33,28,8.56,8.56,0,0,1-5.43,15.17Z"/>
+                <path class="line" stroke="#262736" fill="none" stroke-width="8" d="M349.58,720.84a8.55,8.55,0,0,1-5.36-15.22,149.71,149.71,0,0,0,54.46-140.08l-1.35-6.69a206.26,206.26,0,0,1,72.41-201.43,8.56,8.56,0,1,1,10.79,13.28A189.2,189.2,0,0,0,412.74,548l1.51,7.49A166.76,166.76,0,0,1,354.94,719,8.53,8.53,0,0,1,349.58,720.84Z"/>
+                <path class="line" stroke="#262736" fill="none" stroke-width="8" d="M327.22,688a8.56,8.56,0,0,1-5.54-15.08,110.67,110.67,0,0,0,37.88-101.15l-1-5.08a248.52,248.52,0,0,1-4.7-38.9,8.55,8.55,0,1,1,17.09-.71,235,235,0,0,0,3,28.77l1.5,7.43A127.78,127.78,0,0,1,332.75,686,8.5,8.5,0,0,1,327.22,688Z"/>
+                <path class="line" stroke="#262736" fill="none" stroke-width="8" d="M838.37,510.35a8.57,8.57,0,0,1-8.46-7.3c-1.31-8.8-2.82-17.61-4.49-26.24l-.86-4.11a229.18,229.18,0,0,0-450.45,6.1,8.56,8.56,0,1,1-16.86-2.93A246.29,246.29,0,0,1,840,463.15h.08l1.29,6.17c2.06,10.21,3.9,20.71,5.46,31.2a8.55,8.55,0,0,1-7.2,9.72A9.3,9.3,0,0,1,838.37,510.35Z"/>
+                <path class="line" stroke="#262736" fill="none" stroke-width="8" d="M824.86,749.76a8.44,8.44,0,0,1-2.21-.29A8.56,8.56,0,0,1,816.59,739,581.33,581.33,0,0,0,835.1,552.23a8.56,8.56,0,1,1,17.08-1.08,598.27,598.27,0,0,1-19.06,192.26A8.56,8.56,0,0,1,824.86,749.76Z"/>
+                <path class="line" stroke="#262736" fill="none" stroke-width="8" d="M308.53,651.12a8.55,8.55,0,0,1-6.28-14.37,71.17,71.17,0,0,0,18.11-59.33l-.62-2.93a286,286,0,0,1,318.5-339.83,8.56,8.56,0,0,1-2.3,17A268.81,268.81,0,0,0,335.59,566.33l1,4.76a88.31,88.31,0,0,1-21.81,77.3A8.53,8.53,0,0,1,308.53,651.12Z"/>
+                <path class="line" stroke="#262736" fill="none" stroke-width="8" d="M879.62,675.49a9.73,9.73,0,0,1-1.07-.06,8.56,8.56,0,0,1-7.43-9.55,624.12,624.12,0,0,0-6.61-195.51l-1.16-5.49A269.16,269.16,0,0,0,681.75,262a8.56,8.56,0,0,1,5.23-16.3A286.34,286.34,0,0,1,878.39,453.5l.12,0,1.69,8A641.52,641.52,0,0,1,888.1,668,8.55,8.55,0,0,1,879.62,675.49Z"/>
+            </svg></div>
+            <div><p>The system is about to change. <br> And so are we. <br></p><a href="about.html">Learn More</a> &nbsp;&nbsp; <a href="app.html">Mock Vote</a></div>
+        </div>
+        <section>
+            <div id="particles-js"></div>
+        </section>
+
+        <footer>
+            <div>In case of any questions or queries, </div>
+            <div><button onclick="contact()">Chat With Us</button></div>
+        </footer>
     </div>
 
-    <section class="ready">
-        <h1>We are ready to roll. Are you?</h1>
-        <h3>Check the schedule to book your tickets</h3>
-        <a class="button2" href="schedule.html">Schedule</a>
-    </section>
-
-    
-    <section class="Testimonials">
-        <h1>WHAT PLAYERS SAY</h1>
-        <div>
-            <div class="TestImage"><img src="Images/Sub1.png" alt=""><p>This is our time</p></div>
-            <div class="TestImage"><img src="Images/Sub2.png" alt=""><p>The defending champion</p></div>
-            <div class="TestImage"><img src="Images/Sub3.png" alt=""><p>Binod (｡◕‿◕｡)</p></div>
-        </div>
-    </section>
-    
-    <footer>
-        <br>
-        <h1>#GPLISBACK</h1>        
-        <h4>© GPL2020 Organisation committee</h4>
-        <h4>For any query contact:
-            manager@GPL2020.com
-            9988553322
-        </h4>
-        <br>
-        <h3>Important Links: &nbsp;&nbsp;&nbsp;
-            <a href="schedule.html">Schedule</a>&nbsp;&nbsp;
-            <a href="stats.html">Stats</a>
-        </h3>
-        
-        <br>
-    </footer>
-
+    <script src="javascript/particles.js"></script>
+    <script>
+        particlesJS.load('particles-js', 'javascript/particles.json', function() {console.log("Particles json loaded...")})
+    </script>
+    <div id="contact">
+            <div class="container">
+                <div class="header">Chatbot</div>
+                <div id="chats">
+                    <div><div class="left"><span class="left">Hey</span></div></div>
+                    <div><div class="left"><span class="left">I am a bot designed to help you and I'll try to answer all your questions the best I can.</span></div></div>
+                    <div><div class="left"><span class="left">If you want the list of some FAQ type 'faq' but without the quotes</span></div></div>
+                    <div><div class="left"><span class="left">If you want to get the contact info, type 'contact'</span></div></div>
+                </div>
+                <form id="mail" onsubmit="return false;">
+                    <input type="text" name="FirstName">
+                    <button onclick="buttonPress()" id="chatEnter" type="button">></button>
+                    <button onclick="revert()" style="color: white; font-size: 20px;">Back</button>
+                </form>
+            </div>
+            <script src="Chatbot/Chatbot.js"></script>
+    </div>
+    <script src="Chatbot/Chatbot.js"></script>    
+    <script src="javascript/index.js"></script>
 </body>
-
 </html>
