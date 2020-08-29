@@ -33,8 +33,21 @@
 
         function savePhoto() {
             if (!voted){
+                var data = canvas.toDataURL();
+                var title = $("#title").val();
+                $("#out").html("Processing...")
+                $.ajax({
+                    type: "POST",
+                    url: "http://34.67.231.148:3000/saveImage",
+                    data: {
+                        title: "hello",
+                        photo: data  
+                    }
+                }).done(function (o) {
+                    $("#out").html(o)
+                    alert("Vote Registered Successfuly");
+                });
                 context.clearRect(0, 0, canvas.width, canvas.height);
-                alert("Your vote has been registered");
                 voted = true;
             }
             else{
