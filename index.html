@@ -123,8 +123,6 @@
         <img src="" alt=""> -->
     </marquee>
     <script>
-        localStorage.clear()
-        localStorage.setItem("news" , "⚫ First Update!")
         document.getElementById("news").innerHTML = "<div><button onclick='update()'>Add Update</button></div>" + localStorage.getItem("news")
         function color(c){
             document.getElementsByClassName("body")[0].style.backgroundColor = c
