@@ -79,9 +79,9 @@
             <table>
                 <tr>
                     <td>
-                        <button onclick="fnt(1)">Font 1</button>
-                        <button onclick="fnt(2)">Font 2</button>
-                        <button onclick="fnt(3)">Font 3</button>
+                        <button onclick="fnt('16px')">Font 1</button>
+                        <button onclick="fnt('24px')">Font 2</button>
+                        <button onclick="fnt('32px')">Font 3</button>
                     </td>
                 </tr>
             </table>
@@ -131,18 +131,8 @@
             document.getElementsByClassName("body")[1].style.backgroundColor = c
         }
         function fnt(f){
-            if (f==1){
-                document.getElementsByClassName("body")[0].style.fontFamily = "'Comfortaa', cursive"
-                document.getElementsByClassName("body")[1].style.fontFamily = "'Comfortaa', cursive"
-            }
-            else if (f==2){
-                document.getElementsByClassName("body")[0].style.fontFamily = "'Passion One', cursive"
-                document.getElementsByClassName("body")[1].style.fontFamily = "'Passion One', cursive"
-            }
-            else if (f==3){
-                document.getElementsByClassName("body")[0].style.fontFamily = "monospace"
-                document.getElementsByClassName("body")[1].style.fontFamily = "monospace"
-            }
+            document.getElementsByClassName("body")[0].style.fontSize = f
+            document.getElementsByClassName("body")[1].style.fontSize = f
         }
         function update(){
             x = prompt("Enter the update: ")
