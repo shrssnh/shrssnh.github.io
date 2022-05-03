@@ -1,0 +1,64 @@
+
+section.table{
+    background-color: #f2f2f2;
+    margin: 10%;
+    margin-top: 12%;
+}
+
+.video img{
+    width: 80%;
+    transform: translateX(10%) translateY(50%);
+    box-shadow: inset 0 0 500px black;
+    opacity: 1;
+}
+
+div.image{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    padding: 5%;
+    align-content: center;
+}
+div.logos img{
+    padding: 60px;
+    height: 200px;
+}
+
+div.group img{
+    height: 400px;
+}
+
+div.comparison table, th, td{
+    justify-content: center;
+}
+div.comparison{
+    background-image: url(../Images/Marks.png);
+    background-size: contain;
+    background-blend-mode: color-burn;
+    background-color: #f2f2f2;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+div.comparison table{
+    width: 90%;
+    text-align: center;
+}
+div.comparison th, td{
+    padding: 2%;
+    border-bottom: 1px solid #333333;
+}
+th{
+    font-size: 35px;
+}
+
+.black{
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 9.99%, black 10%, black 100%);
+}
+div.video{
+    background: radial-gradient(transparent, black);
+}
+
+.video img{
+    mix-blend-mode: multiply;
+}

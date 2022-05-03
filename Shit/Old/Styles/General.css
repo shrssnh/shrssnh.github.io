@@ -1,0 +1,169 @@
+html{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+@font-face{
+    src: url(../Fonts/RussoOne-Regular.ttf);
+    font-family: Russo;
+}
+@font-face{
+    src: url(../Fonts/Opensans/OpenSans-Regular.ttf);
+    font-family: Opensans;
+}
+body{
+    background: black;
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    font-family: Opensans;
+}
+h1{font-family: Russo;}
+
+header{
+    z-index: 1;
+    position: fixed;
+    height: 10%;
+    width: 99.1%;
+    background: #1a1a1a81;
+}
+
+header ul{
+    margin: 1.2%;
+    margin-right: 0;
+    list-style: none;
+    float: right;
+    width: 40%;
+}
+
+header ul li{
+    margin: 0;
+    padding: 2%;
+    display: inline-block;
+    mix-blend-mode: difference;
+    transition: 0.2s;
+}
+
+header ul li:hover{
+    mix-blend-mode: normal;
+    transition: 2s;
+}
+
+header img{
+    transform: translateY(-20px);
+    margin: 0;
+    padding-top: 0;
+    margin-left: 80px;
+    width: auto;
+    height: 140px;
+}
+
+
+.video{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -2;
+}
+
+.content a{
+    text-decoration: none;
+}
+
+a.button1{
+    text-decoration: none;
+    font-size: 16px;
+    color: #f2f2f2;
+    padding: 10px;
+    border-radius: 2px;
+    background-image: url("../Images/ButtonBG.png");
+    background-size: 400px 100px;
+    background-position-x: -400px;
+    background-repeat: no-repeat;
+    transition: 0.5s cubic-bezier(0.5, 0, 0, 0.5); 
+}
+
+a.button1:hover{
+    background-position-x: -200px;
+    transition: 0.5s cubic-bezier(0.5, 0, 0, 0.5);
+    padding-right: 25px;
+    padding-left: 25px;
+    background-color: #00b3ff;
+}
+
+a.button2{
+    text-shadow: none;
+    padding: 2vh;
+    border: solid 1px #f2f2f2;
+    font-size: 20px;
+    text-decoration: none;
+    color: #f2f2f2;
+    background-image: url("../Images/BrushHome.png");
+    background-size: 300px 200px;
+    background-position: center -200px;
+    background-repeat: no-repeat;
+    transition: 0.5s cubic-bezier(0.5, 0, 0, 0.5);
+}
+
+a.button2:hover{
+    background-position: center center;
+    background-image: url("../Images/ButtonBG.png");
+    transition: 0.5s cubic-bezier(0.5, 0, 0, 0.5);
+    padding-right: 25px;
+    padding-left: 25px;
+    background-color: #00b3ff;
+}
+
+.heading{
+    font-family: Russo;
+    width: 100vw;
+    bottom: 0;
+    text-align: center;
+    color: #f2f2f2;
+    background-color: #1a1a1a63;
+    padding: 2vh;
+    margin-top: 20%;
+    margin-bottom: 20%;
+    font-size: 100px;
+    display: block;
+    text-shadow:4px 4px rgba(0, 0, 0, 0.411);
+}
+.heading a{font-family: Opensans;}
+
+.heading p{
+    font-size: 18px;
+}
+
+.black{
+    background: black;
+    padding-bottom: 5%;
+    margin-bottom: -20vh;
+}
+
+footer{
+    background-image: url("../Images/Marks.png");
+    background-size: contain;
+    background-color: #00b3ff;
+    color: #f2f2f2;
+    font-size: 18px;
+    padding: 6vh;
+    padding-left: 10vw;
+    box-shadow: 0 -5px #1a1a1a;
+}
+h1{
+    font-size: 75px;
+}
+footer a{
+    text-decoration: underline;
+    color: #f2f2f2;
+    transition: 0.2s;
+}
+footer a:hover{
+    color: #c7c7c7;
+    transition: 0.2s;
+}
